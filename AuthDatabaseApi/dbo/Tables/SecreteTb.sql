@@ -1,0 +1,7 @@
+﻿CREATE TABLE [dbo].[SecreteTb]
+(
+	[Id] INT NOT NULL PRIMARY KEY ,
+	[HashSecrete] NVARCHAR(MAX) NOT NULL ,
+	[Salt] NVARCHAR(MAX) NOT NULL,
+	[SecreteIdentity] NVARCHAR(MAX) UNIQUE NOT NULL
+)
